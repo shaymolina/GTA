@@ -25,10 +25,20 @@ function startCountdown() {
   setInterval(tick, 1000);
 }
 
-function highlightActiveNav() {
+function setupNavToggle() {
+  const toggle = document.querySelector('[data-nav-toggle]');
+  const nav = document.querySelector('[data-main-nav]');
+  if (!toggle || !nav) return;
+  toggle.addEventListener('click', () => {
+    const isOpen = nav.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', String(isOpen));
+  });
+}
+
+function markActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('nav.main-nav a').forEach((link) => {
-    if (link.getAttribute('href') === path) link.classList.add('active');
+  document.querySelectorAll('[data-main-nav] a').forEach((link) => {
+    if (link.getAttribute('href') === path) link.setAttribute('aria-current', 'page');
   });
 }
 
@@ -42,12 +52,14 @@ function setupFaq() {
         if (other !== item) other.classList.remove('open');
       });
       item.classList.toggle('open', !wasOpen);
+      btn.setAttribute('aria-expanded', String(!wasOpen));
     });
   });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   startCountdown();
-  highlightActiveNav();
+  setupNavToggle();
+  markActiveNav();
   setupFaq();
 });
