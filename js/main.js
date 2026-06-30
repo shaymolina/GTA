@@ -1,4 +1,3 @@
-// Countdown to GTA 6 release: 2026-11-19 00:00 Israel time
 function startCountdown() {
   const el = document.querySelector('[data-countdown]');
   if (!el) return;
@@ -10,9 +9,7 @@ function startCountdown() {
   const secsEl = el.querySelector('[data-secs]');
 
   function tick() {
-    const now = Date.now();
-    const diff = Math.max(0, target - now);
-
+    const diff = Math.max(0, target - Date.now());
     const days = Math.floor(diff / 86400000);
     const hours = Math.floor((diff % 86400000) / 3600000);
     const mins = Math.floor((diff % 3600000) / 60000);
@@ -28,28 +25,20 @@ function startCountdown() {
   setInterval(tick, 1000);
 }
 
-function setupNavToggle() {
-  const toggle = document.querySelector('[data-nav-toggle]');
-  const nav = document.querySelector('[data-main-nav]');
-  if (!toggle || !nav) return;
-  toggle.addEventListener('click', () => nav.classList.toggle('open'));
-}
-
 function highlightActiveNav() {
   const path = window.location.pathname.split('/').pop() || 'index.html';
-  document.querySelectorAll('[data-main-nav] a').forEach((link) => {
-    const href = link.getAttribute('href');
-    if (href === path) link.classList.add('active');
+  document.querySelectorAll('nav.main-nav a').forEach((link) => {
+    if (link.getAttribute('href') === path) link.classList.add('active');
   });
 }
 
 function setupFaq() {
-  document.querySelectorAll('.faq-item').forEach((item) => {
-    const btn = item.querySelector('.faq-question');
+  document.querySelectorAll('.faq-entry').forEach((item) => {
+    const btn = item.querySelector('.faq-q');
     if (!btn) return;
     btn.addEventListener('click', () => {
       const wasOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item.open').forEach((other) => {
+      document.querySelectorAll('.faq-entry.open').forEach((other) => {
         if (other !== item) other.classList.remove('open');
       });
       item.classList.toggle('open', !wasOpen);
@@ -59,7 +48,6 @@ function setupFaq() {
 
 document.addEventListener('DOMContentLoaded', () => {
   startCountdown();
-  setupNavToggle();
   highlightActiveNav();
   setupFaq();
 });
