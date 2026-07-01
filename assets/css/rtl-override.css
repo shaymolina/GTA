@@ -189,46 +189,55 @@ i.fa-brands, i[class*="fa-brands"] {
    Previous Chapters — banner + split landing + story pyramid
    ============================================================ */
 
-/* "Previous Chapters" callout — prominent strip */
+/* "Previous Chapters" callout — full-bleed prominent section */
 .prev-chapters-bar {
-  background: rgba(239,235,83,.04);
-  border-top: 2px solid rgba(239,235,83,.25);
-  border-bottom: 2px solid rgba(239,235,83,.25);
-  padding: 26px 0;
+  background: linear-gradient(135deg, rgba(239,235,83,.08) 0%, rgba(239,235,83,.03) 100%);
+  border-top: 3px solid #efe353;
+  border-bottom: 1px solid rgba(239,235,83,.2);
+  padding: 40px 0;
+  position: relative;
+}
+.prev-chapters-bar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 80% 50%, rgba(239,235,83,.06) 0%, transparent 70%);
+  pointer-events: none;
 }
 .prev-chapters-inner {
-  display: flex; align-items: center; gap: 20px;
-  flex-wrap: wrap;
+  display: flex; align-items: center; gap: 24px;
+  flex-wrap: wrap; position: relative;
 }
 .prev-chapters-inner .prev-icon {
-  width: 48px; height: 48px; border-radius: 10px;
-  background: rgba(239,235,83,.1); border: 1px solid rgba(239,235,83,.25);
+  width: 56px; height: 56px; border-radius: 12px;
+  background: rgba(239,235,83,.12); border: 1px solid rgba(239,235,83,.35);
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.2rem; color: #efe353; flex-shrink: 0;
+  font-size: 1.4rem; color: #efe353; flex-shrink: 0;
 }
 .prev-chapters-inner > div { flex: 1; min-width: 0; }
 .prev-chapters-inner strong {
-  color: #fff; font-size: 1rem; font-weight: 800;
-  display: block; margin-bottom: 4px;
+  color: #fff; font-size: 1.15rem; font-weight: 900;
+  display: block; margin-bottom: 6px; letter-spacing: -.01em;
 }
-.prev-chapters-inner span { color: #999; font-size: .84rem; line-height: 1.5; }
+.prev-chapters-inner span { color: #aaa; font-size: .88rem; line-height: 1.6; }
 .prev-chapters-inner .prev-cta {
   white-space: nowrap; flex-shrink: 0;
-  display: inline-flex; align-items: center; gap: 8px;
-  background: rgba(239,235,83,.1);
-  border: 1px solid rgba(239,235,83,.4);
-  color: #efe353 !important;
-  padding: 12px 24px; border-radius: 8px;
-  font-size: .88rem; font-weight: 800;
+  display: inline-flex; align-items: center; gap: 10px;
+  background: #efe353;
+  color: #000 !important;
+  padding: 14px 28px; border-radius: 8px;
+  font-size: .92rem; font-weight: 900;
   text-decoration: none !important;
-  transition: background .2s, border-color .2s;
+  transition: transform .2s, box-shadow .2s;
+  box-shadow: 0 4px 20px rgba(239,235,83,.2);
 }
 .prev-chapters-inner .prev-cta:hover {
-  background: rgba(239,235,83,.18);
-  border-color: rgba(239,235,83,.7);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(239,235,83,.35);
 }
 @media (max-width: 575px) {
-  .prev-chapters-inner { gap: 14px; }
+  .prev-chapters-bar { padding: 28px 0; }
+  .prev-chapters-inner { gap: 16px; }
   .prev-chapters-inner .prev-cta { width: 100%; justify-content: center; }
 }
 
