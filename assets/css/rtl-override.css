@@ -17,3 +17,27 @@ i.fa-brands, i[class*="fa-brands"] {
   text-decoration: none;
 }
 .text-logo span { color: var(--theme-color, #efe353); }
+
+/* RTL submenu positioning fix */
+.header-main .main-menu ul li .submenu {
+  inset-inline-start: auto !important;
+  right: 0;
+  left: auto;
+  text-align: right;
+}
+
+/* Compact nav so all items fit in one row */
+.header-main .main-menu ul li {
+  margin-inline-end: 28px !important;
+}
+.header-main .main-menu ul li a {
+  font-size: 15px !important;
+}
+
+/* Footer layout fix for RTL */
+.footer-widgets-wrapper .list-items li a {
+  padding-right: 0;
+}
+.footer-bottom-wrapper {
+  direction: rtl;
+}
