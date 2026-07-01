@@ -189,33 +189,47 @@ i.fa-brands, i[class*="fa-brands"] {
    Previous Chapters — banner + split landing + story pyramid
    ============================================================ */
 
-/* Banner on story-plot.html */
+/* "Previous Chapters" callout — prominent strip */
 .prev-chapters-bar {
-  background: rgba(255,255,255,.03);
-  border-top: 1px solid rgba(255,255,255,.06);
-  border-bottom: 1px solid rgba(255,255,255,.06);
-  padding: 18px 0;
+  background: rgba(239,235,83,.04);
+  border-top: 2px solid rgba(239,235,83,.25);
+  border-bottom: 2px solid rgba(239,235,83,.25);
+  padding: 26px 0;
 }
 .prev-chapters-inner {
-  display: flex; align-items: center; gap: 18px;
+  display: flex; align-items: center; gap: 20px;
   flex-wrap: wrap;
 }
 .prev-chapters-inner .prev-icon {
-  font-size: 1.4rem; color: var(--theme, #efe353); flex-shrink: 0;
+  width: 48px; height: 48px; border-radius: 10px;
+  background: rgba(239,235,83,.1); border: 1px solid rgba(239,235,83,.25);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; color: #efe353; flex-shrink: 0;
 }
-.prev-chapters-inner strong { color: #fff; font-size: .93rem; display: block; margin-bottom: 3px; }
-.prev-chapters-inner span  { color: #888; font-size: .82rem; line-height: 1.5; }
+.prev-chapters-inner > div { flex: 1; min-width: 0; }
+.prev-chapters-inner strong {
+  color: #fff; font-size: 1rem; font-weight: 800;
+  display: block; margin-bottom: 4px;
+}
+.prev-chapters-inner span { color: #999; font-size: .84rem; line-height: 1.5; }
 .prev-chapters-inner .prev-cta {
-  margin-right: auto; white-space: nowrap;
+  white-space: nowrap; flex-shrink: 0;
   display: inline-flex; align-items: center; gap: 8px;
-  border: 1px solid rgba(239,235,83,.35); color: #efe353 !important;
-  padding: 9px 20px; border-radius: 6px; font-size: .85rem; font-weight: 700;
-  text-decoration: none !important; transition: background .2s;
+  background: rgba(239,235,83,.1);
+  border: 1px solid rgba(239,235,83,.4);
+  color: #efe353 !important;
+  padding: 12px 24px; border-radius: 8px;
+  font-size: .88rem; font-weight: 800;
+  text-decoration: none !important;
+  transition: background .2s, border-color .2s;
 }
-.prev-chapters-inner .prev-cta:hover { background: rgba(239,235,83,.08); }
+.prev-chapters-inner .prev-cta:hover {
+  background: rgba(239,235,83,.18);
+  border-color: rgba(239,235,83,.7);
+}
 @media (max-width: 575px) {
-  .prev-chapters-inner { gap: 12px; }
-  .prev-chapters-inner .prev-cta { margin-right: 0; }
+  .prev-chapters-inner { gap: 14px; }
+  .prev-chapters-inner .prev-cta { width: 100%; justify-content: center; }
 }
 
 /* Pyramid accordion on story-gta4/5.html */
@@ -230,6 +244,8 @@ i.fa-brands, i[class*="fa-brands"] {
 .pyramid-toggle:hover,
 .pyramid-toggle:not(.collapsed) { background: rgba(239,235,83,.06); border-color: rgba(239,235,83,.3); }
 .pyramid-toggle .ptog-icon { color: var(--theme, #efe353); font-size: .9rem; transition: transform .3s; }
+/* fix: icon sits flush against text in RTL — force a gap */
+.pyramid-toggle > span:first-child { display: inline-flex; align-items: center; gap: 10px; }
 .pyramid-toggle:not(.collapsed) .ptog-icon { transform: rotate(180deg); }
 .pyramid-toggle .ptog-meta {
   font-size: .78rem; font-weight: 500; color: #666;
