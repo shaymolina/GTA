@@ -185,6 +185,64 @@ i.fa-brands, i[class*="fa-brands"] {
   .ch-num { font-size: 2.5rem; min-width: 48px; }
 }
 
+/* ============================================================
+   Previous Chapters — banner + split landing + story pyramid
+   ============================================================ */
+
+/* Banner on story-plot.html */
+.prev-chapters-bar {
+  background: rgba(255,255,255,.03);
+  border-top: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  padding: 18px 0;
+}
+.prev-chapters-inner {
+  display: flex; align-items: center; gap: 18px;
+  flex-wrap: wrap;
+}
+.prev-chapters-inner .prev-icon {
+  font-size: 1.4rem; color: var(--theme, #efe353); flex-shrink: 0;
+}
+.prev-chapters-inner strong { color: #fff; font-size: .93rem; display: block; margin-bottom: 3px; }
+.prev-chapters-inner span  { color: #888; font-size: .82rem; line-height: 1.5; }
+.prev-chapters-inner .prev-cta {
+  margin-right: auto; white-space: nowrap;
+  display: inline-flex; align-items: center; gap: 8px;
+  border: 1px solid rgba(239,235,83,.35); color: #efe353 !important;
+  padding: 9px 20px; border-radius: 6px; font-size: .85rem; font-weight: 700;
+  text-decoration: none !important; transition: background .2s;
+}
+.prev-chapters-inner .prev-cta:hover { background: rgba(239,235,83,.08); }
+@media (max-width: 575px) {
+  .prev-chapters-inner { gap: 12px; }
+  .prev-chapters-inner .prev-cta { margin-right: 0; }
+}
+
+/* Pyramid accordion on story-gta4/5.html */
+.pyramid-section { margin-bottom: 12px; }
+.pyramid-toggle {
+  width: 100%; text-align: right; background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.08); border-radius: 10px;
+  padding: 18px 22px; color: #fff; font-size: .97rem; font-weight: 700;
+  cursor: pointer; display: flex; align-items: center; justify-content: space-between;
+  transition: background .2s, border-color .2s;
+}
+.pyramid-toggle:hover,
+.pyramid-toggle:not(.collapsed) { background: rgba(239,235,83,.06); border-color: rgba(239,235,83,.3); }
+.pyramid-toggle .ptog-icon { color: var(--theme, #efe353); font-size: .9rem; transition: transform .3s; }
+.pyramid-toggle:not(.collapsed) .ptog-icon { transform: rotate(180deg); }
+.pyramid-toggle .ptog-meta {
+  font-size: .78rem; font-weight: 500; color: #666;
+  margin-right: 12px; white-space: nowrap;
+}
+.pyramid-body { padding: 28px 4px 12px; }
+.pyramid-body p { font-size: .9rem; color: #bbb; line-height: 1.8; margin-bottom: 14px; }
+.pyramid-body .story-chapter-item { padding: 22px 0; }
+
+/* Prev-chapters split landing (reuses split-landing CSS; just override colors) */
+.prev-panel-gta4 { background: #0d1520; }
+.prev-panel-gta5 { background: #1a1008; }
+
 /* Footer layout fix for RTL */
 .footer-widgets-wrapper .list-items li a {
   padding-right: 0;
