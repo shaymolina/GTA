@@ -249,43 +249,54 @@
         </div>
     </section>
 
-    <!-- Map Image Section -->
-    <section class="fix section-padding" style="background:#0a0a0a;">
+    <!-- Interactive Map Section -->
+    <section class="fix section-padding" style="background:#080808;">
         <div class="container">
             <div class="section-title text-center mb-5">
                 <h6 class="wow fadeInUp"><img src="assets/img/star.png" alt="img"> מפת Leonida</h6>
-                <h2 class="wow fadeInUp" data-wow-delay=".3s">המפה <span>ה<b>רשמית</b></span></h2>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">המפה <span>ה<b>אינטראקטיבית</b></span></h2>
+                <p class="wow fadeInUp" data-wow-delay=".4s" style="color:#777; font-size:.88rem; margin-top:8px;">לחצו על המפה כדי לחקור את Leonida — Vice City, Grassrivers, Leonida Keys ועוד</p>
             </div>
         </div>
         <div class="wow fadeInUp" data-wow-delay=".2s" style="max-width:1400px; margin:0 auto; padding:0 20px;">
-            <div style="border:1px solid rgba(239,235,83,.15); border-radius:16px; overflow:hidden; box-shadow:0 24px 80px rgba(0,0,0,.6);">
-                <img src="https://media.gtaboom.com/variants/1280/media/images/bf/75/gta-6-map-bg.jpg"
-                     alt="מפת Leonida — GTA VI"
-                     style="width:100%; display:block; image-rendering:crisp-edges;">
+            <div style="border:2px solid rgba(239,235,83,.15); border-radius:16px; overflow:hidden; box-shadow:0 24px 80px rgba(0,0,0,.7); position:relative;">
+                <iframe
+                    src="https://mapgenie.io/grand-theft-auto-vi/maps/leonida"
+                    width="100%"
+                    height="620"
+                    frameborder="0"
+                    allowfullscreen
+                    style="display:block;"
+                    loading="lazy"
+                    title="מפת Leonida — GTA VI">
+                </iframe>
+                <!-- Fallback if iframe blocked -->
+                <div id="map-fallback" style="display:none; padding:60px 40px; text-align:center; background:#0d0d0d;">
+                    <i class="fal fa-map" style="font-size:3rem; color:rgba(239,235,83,.3); display:block; margin-bottom:20px;"></i>
+                    <p style="color:#aaa; margin-bottom:20px;">המפה האינטראקטיבית זמינה דרך אתר mapgenie.io</p>
+                    <a href="https://mapgenie.io/grand-theft-auto-vi/maps/leonida" target="_blank" class="theme-btn">פתח את המפה האינטראקטיבית <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
             </div>
-            <p style="text-align:center; color:#555; font-size:.78rem; margin-top:14px;">
-                מפת קהילה המבוססת על חומרים רשמיים — מתעדכנת עם כל חשיפה חדשה של Rockstar
+            <p style="text-align:center; color:#444; font-size:.75rem; margin-top:12px;">
+                מפה אינטראקטיבית מאת <a href="https://mapgenie.io" target="_blank" style="color:#666; text-decoration:none;">mapgenie.io</a> — מבוססת על הטריילרים הרשמיים ומתעדכנת עם כל חשיפה חדשה
             </p>
         </div>
     </section>
 
-    <section class="faq-section fix section-padding">
-        <div class="color-bg"><img src="assets/img/faq/color-bg.png" alt="img"></div>
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="faq-content">
-                        <div class="section-title"><h6><img src="assets/img/star.png" alt="img"> הערה</h6><h2>מה <span>עוד <b>לא ידוע</b></span></h2></div>
-                        <div class="about-content">
-                            <p>Rockstar טרם פרסמה מפה רשמית ומלאה. המידע כאן מבוסס על ניתוח קפדני של הטריילרים הרשמיים, שילוט בתוך הסצנות, הודעות Rockstar ודיווחי תקשורת אמינים — ויתעדכן עם פרסום מידע נוסף.</p>
-                            <p>חובבי הסדרה זיהו בטריילר הבהובים של מה שנראה כפארק שעשועים בקנה מידה עצום — מסורת ותיקה בסדרת GTA, שמעידה כי גם הפעם אזורי בידור ענקיים יהוו חלק מהעולם הפתוח.</p>
+    <!-- "מה עוד לא ידוע" — text overlaid on full-width image -->
+    <section class="fix" style="position:relative; min-height:420px; display:flex; align-items:center; overflow:hidden;">
+        <div style="position:absolute; inset:0; background-image:url('https://media.gtaboom.com/variants/1280/media/images/c0/7b/gtavi-screenshot-places-grassrivers-03.jpg'); background-size:cover; background-position:center;"></div>
+        <div style="position:absolute; inset:0; background:linear-gradient(to left, rgba(0,0,0,.9) 0%, rgba(0,0,0,.75) 45%, rgba(0,0,0,.1) 100%);"></div>
+        <div class="container" style="position:relative; z-index:2;">
+            <div class="row">
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay=".2s">
+                    <div style="padding:60px 0;">
+                        <div class="section-title mb-4">
+                            <h6><img src="assets/img/star.png" alt="img"> הערה</h6>
+                            <h2>מה <span>עוד <b>לא ידוע</b></span></h2>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="faq-image-items">
-                        <div class="faq-image"><img src="https://media.gtaboom.com/variants/1280/media/images/c0/7b/gtavi-screenshot-places-grassrivers-03.jpg" alt="img"></div>
-                        <div class="faq-image"><img src="https://media.gtaboom.com/variants/1280/media/images/43/75/gtavi-screenshot-places-port-gellhorn-01.jpg" alt="img"></div>
+                        <p style="color:#bbb; line-height:1.85; font-size:.95rem; margin-bottom:14px;">Rockstar טרם פרסמה מפה רשמית ומלאה. המידע מבוסס על ניתוח קפדני של הטריילרים הרשמיים, שילוט בתוך הסצנות, הודעות Rockstar ודיווחי תקשורת אמינים.</p>
+                        <p style="color:#bbb; line-height:1.85; font-size:.95rem;">חובבי הסדרה זיהו בטריילר הבהובים של מה שנראה כפארק שעשועים בקנה מידה עצום — מסורת ותיקה בסדרת GTA, שמעידה כי גם הפעם אזורי בידור ענקיים יהוו חלק מהעולם הפתוח.</p>
                     </div>
                 </div>
             </div>
