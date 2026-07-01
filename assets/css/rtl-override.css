@@ -1,6 +1,22 @@
 /* Force Hebrew-capable font everywhere; template fonts (Satoshi/Urbanist/Marcellus/Plus Jakarta) have no Hebrew glyphs.
    Deliberately excludes <i> tags (used exclusively for Font Awesome icons in this template). */
-body, p, h1, h2, h3, h4, h5, h6, a, span, li, button, input, div, label, td, th {
+body, p, h1, h2, h3, h4, h5, h6, a, span, b, strong, em, small, li, button, input, select, textarea, div, label, td, th, blockquote, cite, figcaption {
+  font-family: 'Heebo', Arial, sans-serif !important;
+}
+/* Marcellus/Satoshi/Urbanist are used on specific class selectors in main.css — override them */
+.section-title h2 span,
+.section-title h2 b,
+.hero-content h1 span,
+.hero-content h1 b,
+.project-title span,
+.cta-discuss-content h2 span,
+.counter-items h2,
+.service-content h3,
+.pricing-box-items h3,
+.footer-content h3,
+.widget-head h3,
+.about-content p,
+.about-content h3 {
   font-family: 'Heebo', Arial, sans-serif !important;
 }
 i[class*="fa-"] {
