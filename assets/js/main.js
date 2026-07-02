@@ -549,11 +549,12 @@ CSS TABLE OF CONTENTS
 
 
     function loader() {
-        $(window).on('load', function() {
-            // Animate loader off screen
-            $(".preloader").addClass('loaded');                    
-            $(".preloader").delay(600).fadeOut();                       
-        });
+        function hidePreloader() {
+            $(".preloader").addClass('loaded');
+            $(".preloader").delay(600).fadeOut();
+        }
+        $(window).on('load', hidePreloader);
+        setTimeout(hidePreloader, 3000);
     }
 
     loader();
