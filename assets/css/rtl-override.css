@@ -161,7 +161,7 @@ i.fa-brands, i[class*="fa-brands"] {
 .story-chapter-item:last-child { border-bottom: none; }
 .ch-num {
   font-size: 3.5rem; font-weight: 900; line-height: 1;
-  color: rgba(239,235,83,.13); min-width: 64px;
+  color: rgba(239,235,83,.35); min-width: 64px;
   letter-spacing: -.04em; padding-top: 4px;
   font-family: 'Heebo', Arial, sans-serif !important;
 }
@@ -287,6 +287,17 @@ i.fa-brands, i[class*="fa-brands"] {
 .about-content a.theme-btn {
   margin-top: 32px;
   display: inline-flex;
+}
+
+/* RTL accordion — icon on left side (logical end) */
+.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 12px;
+}
+.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button::after {
+  margin-inline-start: 0;
+  margin-inline-end: auto;
 }
 
 /* Footer layout fix for RTL */
