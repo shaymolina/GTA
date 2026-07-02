@@ -41,6 +41,10 @@ i.fa-brands, i[class*="fa-brands"] {
   left: auto;
   text-align: right;
 }
+.header-main .main-menu ul li .submenu li a {
+  text-align: right !important;
+  display: block;
+}
 
 /* Compact nav so all items fit in one row */
 .header-main .main-menu ul li {
@@ -291,16 +295,13 @@ i.fa-brands, i[class*="fa-brands"] {
 
 /* RTL accordion — text right, icon left */
 .accordion-button {
+  flex-direction: row-reverse !important;
+  justify-content: space-between !important;
   text-align: right !important;
-  flex-direction: row !important;
 }
 .accordion-button::after {
-  margin-left: 0 !important;
-  margin-right: auto !important;
-  order: -1;
-}
-.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button {
-  padding-right: 0;
+  margin: 0 !important;
+  flex-shrink: 0;
 }
 
 /* Footer layout fix for RTL */
