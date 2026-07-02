@@ -295,12 +295,12 @@ i.fa-brands, i[class*="fa-brands"] {
 
 /* RTL accordion — text right, icon left */
 .accordion-button {
-  flex-direction: row-reverse !important;
-  justify-content: space-between !important;
+  direction: rtl !important;
   text-align: right !important;
 }
 .accordion-button::after {
-  margin: 0 !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
   flex-shrink: 0;
 }
 
