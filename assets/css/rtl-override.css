@@ -289,15 +289,18 @@ i.fa-brands, i[class*="fa-brands"] {
   display: inline-flex;
 }
 
-/* RTL accordion — icon on left side (logical end) */
-.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button {
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  gap: 12px;
+/* RTL accordion — text right, icon left */
+.accordion-button {
+  text-align: right !important;
+  flex-direction: row !important;
 }
-.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button::after {
-  margin-inline-start: 0;
-  margin-inline-end: auto;
+.accordion-button::after {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+  order: -1;
+}
+.faq-wrapper .faq-content .accordion-item .accordion-header .accordion-button {
+  padding-right: 0;
 }
 
 /* Footer layout fix for RTL */

@@ -154,11 +154,11 @@
                                         <li><a href="index.html">בית</a></li>
                                         <li><a href="release.html">יציאה ומחיר</a></li>
                                         <li><a href="map.html">המפה</a></li>
-                                        <li class="has-dropdown"><a href="#">גיימפליי <i class="fas fa-angle-down"></i></a>
+                                        <li><a href="characters.html">דמויות ועלילה</a></li>
+                                        <li><a href="missions.html">משימות</a></li>
+                                        <li class="has-dropdown"><a href="gameplay.html">גיימפלי <i class="fas fa-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="characters.html">דמויות ועלילה</a></li>
-                                                <li><a href="missions.html">משימות</a></li>
-                                                <li><a href="gameplay.html">גיימפליי</a></li>
+                                                <li><a href="gameplay.html">גיימפלי</a></li>
                                                 <li><a href="vehicles.html">רכבים ונשקים</a></li>
                                                 <li><a href="wildlife.html">חיות ודיג</a></li>
                                                 <li><a href="soundtrack.html">פסקול</a></li>
@@ -180,7 +180,7 @@
                     </div>
                     <div class="header-right d-flex justify-content-end align-items-center">
                         <a href="release.html" class="join-text">הזמנה מוקדמת</a>
-                        <div class="header__hamburger d-xl-block my-auto">
+                        <div class="header__hamburger d-xl-none my-auto">
                             <div class="sidebar__toggle">
                                 <i class="fas fa-bars"></i>
                             </div>
@@ -214,7 +214,7 @@
         <div class="hero-image img-custom-anim-left bg-cover" style="background-image: url('https://media.gtaboom.com/variants/1280/media/images/96/a8/gtavi-screenshot-places-vice-city-06.jpg');"></div>
     </section>
 
-    <!-- Core mechanics -->
+    <!-- Core mechanics with image -->
     <section class="about-section section-padding section-bg fix">
         <div class="bg-shape"><img src="assets/img/about/bg-shape.png" alt="shape-img"></div>
         <div class="container">
@@ -222,113 +222,91 @@
                 <h6 class="wow fadeInUp"><img src="assets/img/star.png" alt="img"> מאומת רשמית</h6>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">גלגל נשק חדש <br><span>ועולם <b>חי ונושם</b></span></h2>
             </div>
-            <div class="about-content" style="max-width:900px;">
-                <p>אחת ההכרזות המשמעותיות ביותר היא עיצוב מחדש מלא של גלגל הנשק: ניתן לעבור בין שלוש קטגוריות — נשק, ציוד ואבזור — באמצעות R1/RB. בין הפריטים שאושרו: משקפת, שכפ"ץ, פנס, אוכל ושתייה, תיקי דאפל וערכות טיפול בטראומה.</p>
-                <p>מנגנון ה"דרייב-ביי" הורחב: ניתן לירות מחלונות הרכב, ממטען פתוח של משאיות, ואפילו תוך כדי שחייה. נוספה מכניקת התכופפות לסטלת' — אך זחילה על הבטן שנראתה בדליפות 2022 הוסרה מהגרסה הסופית.</p>
-                <p>Rockstar מתארת עולם פתוח ריאליסטי ברמה חסרת תקדים: NPC עם שגרת יום, תאורה דינמית, מזג אוויר משתנה ומכשיר נייד פעיל עם רשתות חברתיות בדיוניות לכל דמות.</p>
+            <div class="about-items">
+                <div class="about-content">
+                    <p>עיצוב מחדש מלא של גלגל הנשק: שלוש קטגוריות — נשק, ציוד ואבזור — נגישות דרך R1/RB. בין הפריטים שאושרו: משקפת, שכפ"ץ, פנס, אוכל ושתייה, תיקי דאפל וערכות טיפול בטראומה.</p>
+                    <ul class="list-items">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>ירי מחלונות הרכב, ממטען פתוח ותוך כדי שחייה — לראשונה בסדרה</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>סטלת' — כיפוף אושר; זחילה על הבטן (מדליפות 2022) הוסרה מהגרסה הסופית</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>הסוואת נשק אוטומטית בהמון — NPC מגיבים לנשק גלוי</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>NPC עם שגרת יום — ישנים, אוכלים, עובדים לפי לוח זמנים עצמאי</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>מזג אוויר דינמי — סופות הוריקן כאירועי עולם</span></li>
+                    </ul>
+                    <a href="vehicles.html" class="theme-btn">רכבים ונשקים <i class="fa-regular fa-arrow-up-right"></i></a>
+                </div>
+                <div class="about-image wow fadeInUp" data-wow-delay=".3s">
+                    <img src="https://media.gtaboom.com/variants/1280/media/images/54/c0/gtavi-screenshot-places-vice-city-02.jpg" alt="Vice City">
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Dual protagonist -->
-    <section style="padding:80px 0; background:#0a0a0a;">
+    <section class="about-section section-padding fix">
         <div class="container">
-            <div class="section-title ml-200 mb-5">
+            <div class="section-title ml-200">
                 <h6 class="wow fadeInUp"><img src="assets/img/star.png" alt="img"> שתי דמויות</h6>
                 <h2 class="wow fadeInUp" data-wow-delay=".3s">לוסיה וג'ייסון <br><span>ב<b>זמן אמת</b></span></h2>
             </div>
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-6">
-                    <div style="display:flex; flex-direction:column; gap:16px;">
-                        <div style="display:flex; gap:16px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:12px; padding:20px;">
-                            <i class="fal fa-users" style="color:#efe353; font-size:1.3rem; flex-shrink:0; margin-top:2px;"></i>
-                            <div><strong style="color:#fff; display:block; margin-bottom:6px;">שלושה מצבי שליטה</strong><p style="color:#999; font-size:.85rem; margin:0; line-height:1.65;">סולו לוסיה, סולו ג'ייסון, ושליטה כפולה — ניתן להפעיל שני גיבורים בו-זמנית בזמן שוד פתוח.</p></div>
-                        </div>
-                        <div style="display:flex; gap:16px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:12px; padding:20px;">
-                            <i class="fal fa-sync" style="color:#efe353; font-size:1.3rem; flex-shrink:0; margin-top:2px;"></i>
-                            <div><strong style="color:#fff; display:block; margin-bottom:6px;">החלפה בזמן אמת</strong><p style="color:#999; font-size:.85rem; margin:0; line-height:1.65;">בדומה ל-GTA 5 אך עמוק יותר — כל דמות ממשיכה לנהל שגרת חיים כשאתם שולטים בשנייה.</p></div>
-                        </div>
-                        <div style="display:flex; gap:16px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.07); border-radius:12px; padding:20px;">
-                            <i class="fal fa-shield-check" style="color:#efe353; font-size:1.3rem; flex-shrink:0; margin-top:2px;"></i>
-                            <div><strong style="color:#fff; display:block; margin-bottom:6px;">כיסוי הדדי בשוד</strong><p style="color:#999; font-size:.85rem; margin:0; line-height:1.65;">במשימות שוד, אחת הדמויות מכסה את השנייה — מה שיוצר דינמיקת Bonnie and Clyde ייחודית.</p></div>
-                        </div>
-                    </div>
+            <div class="about-items">
+                <div class="about-image wow fadeInUp" data-wow-delay=".3s">
+                    <img src="https://media.gtaboom.com/variants/1280/media/images/03/23/gtavi-wallpaper-artwork-jason-and-lucia-01-tablet.jpg" alt="ג'ייסון ולוסיה">
                 </div>
-                <div class="col-lg-6">
-                    <div style="position:relative; border-radius:14px; overflow:hidden;">
-                        <img src="https://media.gtaboom.com/variants/1280/media/images/c2/2f/gtavi-screenshot-people-lucia-caminos-06.jpg" alt="לוסיה וג'ייסון" style="width:100%; display:block; border-radius:14px;">
-                        <div style="position:absolute; inset:0; background:linear-gradient(to top, rgba(0,0,0,.6) 0%, transparent 50%); border-radius:14px;"></div>
-                        <div style="position:absolute; bottom:20px; right:20px;">
-                            <span style="background:rgba(239,235,83,.12); border:1px solid rgba(239,235,83,.3); color:#efe353; font-size:.75rem; font-weight:800; padding:6px 14px; border-radius:6px; text-transform:uppercase; letter-spacing:.08em;">לוסיה קמינוס — גיבורה ראשונה בסדרה</span>
-                        </div>
-                    </div>
+                <div class="about-content">
+                    <p>מערכת שני הגיבורים עמוקה יותר מכל מה שנראה ב-GTA 5. כל דמות ממשיכה לחיות את שגרת יומה כשאתם שולטים בשנייה, ובמשימות שוד ניתן להפעיל שתי הדמויות בו-זמנית.</p>
+                    <ul class="list-items">
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>שלושה מצבי שליטה — סולו לוסיה, סולו ג'ייסון, ושניהם בו-זמנית בשוד פתוח</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>החלפה בזמן אמת — הדמות שאינה בשליטה ממשיכה בשגרת חייה</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>כיסוי הדדי — דינמיקת Bonnie and Clyde ייחודית בשוד</span></li>
+                        <li><svg xmlns="http://www.w3.org/2000/svg" width="22" height="14" viewBox="0 0 22 14" fill="none"><path d="M11.3909 14C11.0558 14 10.8325 13.8667 10.6091 13.6L5.91878 8C5.47208 7.46667 5.47208 6.66667 5.91878 6.13333C6.36548 5.6 7.03553 5.6 7.48223 6.13333L11.3909 10.8L20.1015 0.4C20.5482 -0.133333 21.2183 -0.133333 21.665 0.4C22.1117 0.933333 22.1117 1.73333 21.665 2.26667L12.1726 13.6C12.0609 13.8667 11.7259 14 11.3909 14Z" fill="#EFFB53"/><path d="M5.80711 14C5.47208 14 5.24873 13.8667 5.02538 13.6L0.335025 8C-0.111675 7.46667 -0.111675 6.66667 0.335025 6.13333C0.781726 5.6 1.45178 5.6 1.89848 6.13333L6.58883 11.7333C7.03553 12.2667 7.03553 13.0667 6.58883 13.6C6.47716 13.8667 6.14213 14 5.80711 14Z" fill="#EFFB53"/></svg><span>לוסיה — גיבורה ראשית ראשונה בהיסטוריית GTA</span></li>
+                    </ul>
+                    <a href="characters.html" class="theme-btn">לוסיה וג'ייסון <i class="fa-regular fa-arrow-up-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Mechanics grid with bg -->
+    <!-- All confirmed mechanics -->
     <section style="position:relative; background-image:url('https://media.gtaboom.com/variants/1280/media/images/96/a8/gtavi-screenshot-places-vice-city-06.jpg'); background-size:cover; background-position:center; padding:90px 0;">
-        <div style="position:absolute; inset:0; background:rgba(0,0,0,.8);"></div>
+        <div style="position:absolute; inset:0; background:rgba(0,0,0,.82);"></div>
         <div class="container" style="position:relative; z-index:2;">
-            <div class="section-title ml-200 mb-5">
-                <h6 style="font-size:11px; font-weight:800; letter-spacing:.12em; text-transform:uppercase; color:#efe353; display:flex; align-items:center; gap:8px; margin-bottom:10px;"><img src="assets/img/star.png" alt="img"> מכניקות מאושרות</h6>
-                <h2 style="color:#fff; font-weight:900; font-size:clamp(1.8rem,3vw,2.6rem);">כל מה שאושר <br><span style="color:#efe353;">על הגיימפליי</span></h2>
+            <div class="section-title ml-200">
+                <h6 class="wow fadeInUp"><img src="assets/img/star.png" alt="img"> מכניקות מאושרות</h6>
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">כל מה שאושר <br><span><b>על הגיימפליי</b></span></h2>
             </div>
-            <div class="row g-3">
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-circle-nodes" style="margin-left:8px;"></i>גלגל נשק בשלוש קטגוריות</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">נשק, ציוד ואבזור — R1/RB. אפשרות לשאת רק 2 רובים ו-2 אקדחים; שאר הנשקים בתא המטען.</p>
-                    </div>
+            <div class="story-chapter-item">
+                <div class="ch-num">01</div>
+                <div class="ch-body">
+                    <h4>גלגל נשק בשלוש קטגוריות</h4>
+                    <p>נשק, ציוד ואבזור — R1/RB. שאפשר לשאת רק 2 רובים ו-2 אקדחים בו-זמנית; שאר הנשקים מאוחסנים בתא המטען של הרכב.</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-car-side" style="margin-left:8px;"></i>ירי מרכב מורחב</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">ירי מחלונות, ממטען פתוח של משאיות, ותוך כדי שחייה — לראשונה בסדרה.</p>
-                    </div>
+            </div>
+            <div class="story-chapter-item">
+                <div class="ch-num">02</div>
+                <div class="ch-body">
+                    <h4>ירי מרכב מורחב</h4>
+                    <p>ירי מחלונות הרכב, ממטען פתוח של משאיות, ותוך כדי שחייה — לראשונה בסדרה. אפשרי גם לירות מתחת למים עם Speargun.</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-eye-slash" style="margin-left:8px;"></i>הסוואת נשק בהמון</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">הדמויות מסתירות נשקים אוטומטית כשנכנסות לאזורים הומים — NPC מגיבים לנשק גלוי.</p>
-                    </div>
+            </div>
+            <div class="story-chapter-item">
+                <div class="ch-num">03</div>
+                <div class="ch-body">
+                    <h4>AI משטרתי מתקדם</h4>
+                    <p>6 כוכבי חיפוש עם תגובה מדורגת לפי חומרת העבירה. המשטרה "זוכרת" כלי רכב וחשודים לאורך זמן.</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-ghost" style="margin-left:8px;"></i>סטלת' והתכופפות</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">מכניקת כיפוף ומעבר שקט אושרה. זחילה על הבטן (שנראתה בדליפות) הוסרה מהגרסה הסופית.</p>
-                    </div>
+            </div>
+            <div class="story-chapter-item">
+                <div class="ch-num">04</div>
+                <div class="ch-body">
+                    <h4>טלפון ורשתות חברתיות</h4>
+                    <p>הדמויות גולשות בפיד בדיוני בסגנון TikTok/Instagram. מעקב אחרי משפיענים בדיוניים פותח משימות נסתרות ותוכן בלעדי.</p>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-shield-halved" style="margin-left:8px;"></i>AI משטרתי חכם</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">6 כוכבי חיפוש עם תגובה מדורגת לפי חומרת העבירה — המשטרה "זוכרת" כלי רכב וחשודים.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-mobile" style="margin-left:8px;"></i>טלפון ורשתות חברתיות</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">הדמויות גולשות בפיד בדיוני בסגנון TikTok/Instagram — מעקב אחרי משפיענים פותח תוכן נסתר.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-people-group" style="margin-left:8px;"></i>NPC עם שגרת יום</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">דמויות משנה ישנות, אוכלות, עובדות ויוצאות — כל אחד לפי לוח זמנים עצמאי.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-cloud-rain" style="margin-left:8px;"></i>מזג אוויר דינמי</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">גשם, סערות, שמש — כולם משפיעים על הגיימפליי. סופות הוריקן ייחשפו כנראה כאירועי עולם.</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div style="background:rgba(0,0,0,.5); border:1px solid rgba(239,235,83,.15); border-radius:10px; padding:20px;">
-                        <h5 style="color:#efe353; font-size:.9rem; font-weight:800; margin-bottom:8px;"><i class="fal fa-home" style="margin-left:8px;"></i>בתים ונכסים</h5>
-                        <p style="color:#bbb; font-size:.82rem; line-height:1.65; margin:0;">ג'ייסון מחזיק מאובטח אישי עם עמדת נשקים. נכסים ומוסכים ניתנים לרכישה ברחבי Leonida.</p>
-                    </div>
+            </div>
+            <div class="story-chapter-item">
+                <div class="ch-num">05</div>
+                <div class="ch-body">
+                    <h4>בתים ונכסים</h4>
+                    <p>ג'ייסון מחזיק מאובטח אישי שמאחסן את ה-Enduro, ה-Crest Kayak וה-Ganado pickup שלו — עם עמדת נשקים. מוסכים ונכסים ניתנים לרכישה ברחבי Leonida.</p>
                 </div>
             </div>
         </div>
