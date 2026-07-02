@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://gta-israel.co.il/</loc><priority>1.0</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/release</loc><priority>0.9</priority><changefreq>weekly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/characters</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/map</loc><priority>0.9</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/gameplay</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/missions</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/faq</loc><priority>0.8</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/vehicles</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/wildlife</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/soundtrack</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/compare</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/online</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/cheats</loc><priority>0.6</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/news</loc><priority>0.8</priority><changefreq>daily</changefreq></url>
+  <url><loc>https://gta-israel.co.il/char-profiles</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/story-plot</loc><priority>0.7</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/prev-chapters</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/story-gta4</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+  <url><loc>https://gta-israel.co.il/story-gta5</loc><priority>0.5</priority><changefreq>monthly</changefreq></url>
+</urlset>
