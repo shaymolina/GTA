@@ -268,6 +268,27 @@ i.fa-brands, i[class*="fa-brands"] {
 .prev-panel-gta4 { background: #0d1520; }
 .prev-panel-gta5 { background: #1a1008; }
 
+/* list-items SVG + span spacing */
+.list-items li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+.list-items li svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.list-items li span {
+  flex: 1;
+}
+
+/* theme-btn spacing inside about-content */
+.about-content .theme-btn,
+.about-content a.theme-btn {
+  margin-top: 32px;
+  display: inline-flex;
+}
+
 /* Footer layout fix for RTL */
 .footer-widgets-wrapper .list-items li a {
   padding-right: 0;
